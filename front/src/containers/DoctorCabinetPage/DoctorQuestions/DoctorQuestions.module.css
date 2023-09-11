@@ -1,0 +1,148 @@
+.questionsBlock {
+    padding: 13px 23px;
+    background-color: var(--light_blue);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition-delay: 0.5s;
+    margin-bottom: 15px;
+    gap: 1.5rem;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.questionsBlock:hover {
+    box-shadow: 0 0 9px var(--gray_blue);
+    transition: 0.3s;
+}
+
+.button p {
+    font-size: 16px;
+    color: var(--black_blue);
+    font-weight: normal;
+}
+
+.arrow {
+    background: url("../../../assets/img/arrow-short.svg") center/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+}
+
+.arrowUp {
+    transform: rotate(-90deg);
+}
+
+.questionsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.group_row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input_flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tiny_select {
+    padding: 0.625rem 2rem 0.625rem 1.25rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    margin: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tiny_select_wraper {
+    position: relative;
+    align-self: flex-start;
+}
+
+.tiny_select_wraper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: var(--black_blue) transparent transparent transparent;
+}
+
+.custom_option {
+    color: var(--black_blue);
+    padding: 1rem 0.5rem;
+}
+
+.custom_option:hover {
+    background-color: var(--violet);
+}
+
+.custom_option:checked {
+    color: white;
+    background-color: var(--violet);
+}
+
+@media screen and (min-width: 320px) {
+    .custom_option {
+        font-size: 0.9rem;
+    }
+
+    .group_row {
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .custom_option {
+        font-size: 1rem;
+    }
+
+    .questionsBlock {
+        padding: 20px 40px;
+    }
+
+    .button p {
+        font-size: 20px;
+    }
+
+    .group_row {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .questionsBlock {
+        padding: 30px 60px;
+    }
+
+    .button p {
+        font-size: 20px;
+    }
+    
+    .questionsBlock {
+        flex-basis: 100%;
+    }
+}
+
+

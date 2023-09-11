@@ -1,0 +1,207 @@
+.recommendationBlock {
+    margin-top: 30px;
+    background-color: var(--light_blue);
+    padding: 20px 16px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.recommendationForm {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+}
+
+.rerecommendationFormTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.countOftext {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.previewBox {
+    min-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.previewBox img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.removeImage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--bg_light_blue);
+    border-radius: 50%;
+}
+
+.recommendationFormBottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    resize: none;
+    height: 100px;
+    font-size: 12px;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.publicationBtn button:hover {
+    background-color: var(--black_blue);
+}
+
+.recommendationsBottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recommendationBtn {
+    padding: 4px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--violet);
+}
+
+.recommendationBtn:hover {
+    background-color: var(--black_blue);
+}
+
+.recommendationsList {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--bg_light_blue);
+    max-height: 370px;
+    overflow-y: scroll;
+    width: 100%;
+    animation-name: list;
+    animation-duration: 0.5s;
+}
+
+.recommendationsList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.recommendationsList::-webkit-scrollbar-thumb {
+    background: var(--violet);
+    border-radius: 25px;
+    border: 4px solid var(--bg_light_blue);
+}
+
+.recommendationsList::-webkit-scrollbar-thumb:hover {
+    background: rgb(104, 84, 134);
+}
+
+.recommendationsList::-webkit-scrollbar-track {
+    background-color: var(--bg_light_blue);
+    border-radius: 25px;
+    margin-block: 20px;
+}
+
+.arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+}
+
+.arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+.errorText {
+    max-width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--violet);
+    padding: 0.5rem 0;
+}
+
+.noRecommendations {
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 600px) {
+    .recommendationBlock {
+        padding: 20px 40px;
+    }
+
+    .rerecommendationFormTop {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    .textarea {
+        font-size: 12px;
+    }
+
+    .publicationBtn {
+        margin: 0;
+    }
+
+    .recommendationsList {
+        padding: 15px;
+    }
+
+    .recommendationsList::-webkit-scrollbar {
+        width: 15px;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .recommendationBlock {
+        padding: 36px 60px;
+    }
+
+    .textarea {
+        font-size: 16px;
+    }
+
+    .fileIcon {
+        scale: 1;
+    }
+
+    .inputFileLabel p {
+        font-size: 16px;
+    }
+}

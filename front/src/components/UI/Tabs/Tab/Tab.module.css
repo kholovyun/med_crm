@@ -1,0 +1,17 @@
+.content_item {
+    background-color: white;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 320px) {
+    .content_item {
+        border-radius: 0 2rem 2rem 2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .content_item {
+        border-radius: 2rem;
+    }
+}

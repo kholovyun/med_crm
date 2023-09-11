@@ -1,0 +1,27 @@
+.infoTextBoxAlone {
+    display: flex;
+    gap: 10px 10px;
+    justify-content: space-between;
+}
+.infoTextBoxAloneSubText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18191C;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 430px) {
+    .infoTextBoxAloneSubText {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .infoTextBoxAlone {
+        flex-direction: column;
+    }
+}
+

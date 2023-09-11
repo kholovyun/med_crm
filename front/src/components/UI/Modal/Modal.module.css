@@ -1,0 +1,32 @@
+.modal_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(24, 25, 28, 0.35);
+}
+
+.modal_box {
+    display: flex;
+    flex-direction: column;
+    z-index: 101;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease-out;
+}
+
+.modal_content {
+    background-color: var(--light_blue);
+    padding: 1.56rem;
+    border-radius: 25px;
+    max-height: 90vh;
+    overflow-y: auto;
+}

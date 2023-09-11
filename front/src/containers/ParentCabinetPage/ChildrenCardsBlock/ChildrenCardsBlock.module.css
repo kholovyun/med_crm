@@ -1,0 +1,62 @@
+.childrenCardsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    row-gap: 20px;
+}
+
+.addChildCard {
+    padding: 20px;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--light_blue_half_opacity);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.plusIcon {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../../../assets/img/plus.svg") center no-repeat;
+    cursor: pointer;
+}
+
+.addChildCard:hover {
+    background-color: var(--violet);
+}
+
+.addChildCard:hover .addChildCardTitle {
+    color: white;
+}
+
+.addChildCard:hover .plusIcon {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../../../assets/img/plus-white.svg") center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media screen and (min-width: 450px) {
+    .addChildCard {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .addChildCard {
+        width: 32%;
+    }
+}

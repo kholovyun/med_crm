@@ -1,0 +1,19 @@
+.form_box {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--light_blue_half_opacity);
+    border-radius: 2.25rem;
+}
+
+@media screen and (min-width: 320px) {
+    .form_box {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .form_box {
+        padding: 2rem 4rem;
+    }
+}

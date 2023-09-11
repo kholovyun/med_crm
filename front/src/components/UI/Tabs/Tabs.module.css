@@ -1,0 +1,24 @@
+.tabs {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 2rem;
+    cursor: pointer;
+    width: calc(100% - 100px);
+}
+
+.tab_content {
+    width: 100%;
+}
+
+@media (min-width: 320px) {
+    .tabs {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .tabs {
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,90 @@
+.transparent_link {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--black_blue);
+    line-height: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    justify-content: space-between;
+}
+
+.big::after,
+.small::after,
+.tiny::after {
+    content: "";
+    background: url("../../../assets/img/arrow.svg") center/contain no-repeat;
+    width: 1.6rem;
+}
+
+.small::after,
+.big::after {
+    height: 1.3rem;
+}
+
+.tiny::after {
+    height: 1rem;
+}
+
+.big:hover,
+.big:active,
+.small:hover,
+.small:active,
+.tiny:hover,
+.tiny:active {
+    font-weight: 500;
+    color: var(--black_blue);
+    background-color: var(--light_blue);
+}
+
+.big {
+    font-size: 1.3rem;
+    min-width: 11rem;
+    padding: 0.9rem 2rem;
+}
+
+.small {
+    font-size: 1.3rem;
+    min-width: 6.25rem;
+    padding: 0.75rem 2rem;
+    flex-shrink: 0;
+}
+
+.tiny {
+    padding: 0.625rem 1.25rem;
+}
+
+@media screen and (min-width: 320px) {
+    .big {
+        font-size: 1.1rem;
+        min-width: 9rem;
+    }
+
+    .small {
+        font-size: 1.1rem;
+        min-width: 6rem;
+    }
+
+    .tiny {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .big {
+        font-size: 1.3rem;
+        min-width: 11rem;
+    }
+
+    .small {
+        font-size: 1.3rem;
+        min-width: 6.25rem;
+    }
+
+    .tiny {
+        font-size: 1rem;
+    }
+}

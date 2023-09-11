@@ -1,0 +1,22 @@
+stages:
+  - deploy
+
+deploy-code-job:
+  stage: deploy
+  image: docker:20.10.16
+  only: ["dev"]
+  services:
+    - name: docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    IMAGE_NAME: "my-front"
+  before_script:
+    - apk update && apk add openssh-client sshpass
+  script:
+    - sshpass -p "$SERVER_PASS" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "echo Connected"
+    - docker build --build-arg VITE_BASE_URL="$VITE_BASE_URL" -t "$IMAGE_NAME:$CI_COMMIT_SHA" .
+    - docker save "$IMAGE_NAME:$CI_COMMIT_SHA" | sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker load"
+    - sshpass -p "$SERVER_PASS" ssh "$SERVER_USER@$SERVER_IP" "docker container rm -f $IMAGE_NAME || true"
+    - sshpass -p "$SERVER_PASS" ssh "$SERVER_USER@$SERVER_IP" "docker run -d --restart always --name $IMAGE_NAME -p 80:80 $IMAGE_NAME:$CI_COMMIT_SHA"
+  after_script:
+    - sshpass -p "$SERVER_PASS" ssh "$SERVER_USER@$SERVER_IP" "docker image prune -a -f"

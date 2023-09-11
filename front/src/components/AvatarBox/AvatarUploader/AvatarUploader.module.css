@@ -1,0 +1,109 @@
+.AvatarUploaderBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.inputLabel {
+    align-self: baseline;
+    width: 100%;
+}
+
+.inputLabel p{
+    width: 100%;
+    text-align: center;
+}
+
+.avatarInput {
+    display: none;
+}
+
+.rangeInputField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rangeMinus, .rangePlus {
+    font-size: 30px;
+    color: var(--violet);
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none; 
+    -moz-user-select: none; 
+    -webkit-text-select: none; 
+    -webkit-user-select: none; 
+}
+
+.rangeMinus:active, .rangePlus:active {
+    color: var(--light_blue);
+}
+
+.rangeInput {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 250px;
+    background: var(--bg_light_blue);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 40px;
+    background-color: var(--violet);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rangeInput:disabled::-webkit-slider-thumb{
+    display: none;
+}
+
+.avatarButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatarBtn {
+    background-color: var(--violet);
+    border-radius: 17px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.avatarBtn:hover {
+    background-color: var(--black_blue);
+}
+
+
+.fileName {
+    background-color: var(--bg_light_blue);
+    border-radius: 17px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.avatarBtn:disabled  {
+    background-color: var(--bg_light_blue);
+    color: var(--gray_blue);
+}
+

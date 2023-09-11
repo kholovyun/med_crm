@@ -1,0 +1,48 @@
+.switch_row {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    border-radius: 32px;
+    padding: 4px;
+    width: max-content;
+}
+
+.white_circle {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.text {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.on {
+    background-color: var(--violet);
+}
+
+.off {
+    background-color: var(--gray_blue);
+}
+
+.on:hover,
+.off:hover {
+    background-color: var(--black_blue);
+    outline: 2px solid var(--black_blue);
+    outline-offset: 2px;
+}
+
+.disabled {
+    opacity: 0.6;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+    outline: none;
+}

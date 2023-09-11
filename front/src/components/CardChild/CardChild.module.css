@@ -1,0 +1,26 @@
+.childAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.docInfoBlock {
+    display: flex;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dateChildStyle {
+    width: 100%;
+    text-align: right;
+}

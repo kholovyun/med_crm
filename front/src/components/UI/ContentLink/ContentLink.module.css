@@ -1,0 +1,49 @@
+.contentBox {
+    flex-basis: 48%;
+    padding: 30px 40px;
+    background-color: var(--light_blue);
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-delay: 0.5s;
+}
+
+.contentBox:hover {
+    box-shadow: 0 0 9px var(--gray_blue);
+    transition: 0.3s;
+}
+
+.contentText {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black_blue);
+}
+
+.contentArrow {
+    background: url("../../../assets/img/arrow-short.svg") center/contain no-repeat;
+    width: 40px;
+    height: 25px;
+    transform: rotate(90deg)
+}
+
+.contentArrowRight {
+    transform: rotate(0deg)
+}
+
+@media screen and (max-width: 550px) {
+    .contentBox {
+        padding: 13px 23px;
+    }
+    .contentText {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .contentBox {
+        flex-basis: 100%;
+    }
+}

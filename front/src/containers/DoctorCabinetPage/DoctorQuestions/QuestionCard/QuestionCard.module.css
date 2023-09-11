@@ -1,0 +1,27 @@
+.questionCard {
+    width: 100%;
+    padding: 30px;
+    background-color: var(--bg_light_blue);
+    border-radius: 1.4rem;
+}
+
+.showButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showButton p {
+    font-size: 18px;
+    color: var(--black_blue);
+}
+
+.arrow {
+    background: url("../../../../assets/img/arrow-short.svg") center/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+}
+
+.arrowUp {
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,103 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--light_blue);
+    border-top-right-radius: 1.56rem;
+    margin-bottom: 4rem;
+    border-bottom-right-radius: 1.56rem;
+}
+
+.sidebar_colappsed_icons_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar_colappsed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light_blue);
+    border-radius: 50%;
+    align-self: flex-start;
+    padding: 1rem;
+}
+
+.open_btn {
+    background: url("../../../assets/img/arrow-in-circle.svg") center/contain no-repeat;
+    transform: rotate(180deg);
+}
+
+.header_menu_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 20px 30px 20px;
+    align-items: center;
+}
+
+.open_btn,
+.close_btn {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../../../assets/img/arrow-in-circle.svg") center/contain no-repeat;
+    cursor: pointer;
+    opacity: 0.55;
+}
+
+.menu_text {
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--black_blue);
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip:hover>* {
+    visibility: visible;
+    opacity: 1;
+}
+
+.empty_box {
+    width: 56px;
+    height: 47px;
+}
+
+@media screen and (min-width: 320px) {
+    .sidebar_colappsed_icons_column {
+        margin: 0 0 2rem 0;
+    }
+
+    .sidebar_small_screen {
+        display: block;
+    }
+
+    .sidebar_big_screen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .sidebar_small_screen {
+        display: none;
+    }
+
+    .sidebar_big_screen {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .sidebar_colappsed_icons_column {
+        margin: 0 0 0 -12px;
+    }
+}

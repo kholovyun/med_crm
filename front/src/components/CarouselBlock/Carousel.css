@@ -1,0 +1,38 @@
+.alice-carousel span {
+    display: none;
+}
+.alice-carousel__prev-btn, .alice-carousel__next-btn {
+    margin: 0;
+    padding: 0;
+}
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    background: url("../../assets/img/arrow-carousel.svg") center/cover no-repeat;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 24px);
+    margin: 0;
+    padding: 0;
+}
+.alice-carousel__next-btn-item { 
+    right: -30px;
+}
+
+.alice-carousel__prev-btn-item {
+    left: -30px;
+    transform: scale(-1, 1);
+}
+
+
+.alice-carousel__stage {
+    margin-right: 0 !important;
+}
+.alice-carousel__stage-item {
+    padding: 10px;
+    margin-right: 0 !important;
+    
+}
+
+
+

@@ -1,0 +1,78 @@
+.doctorInformationBlock {
+    padding: 20px 16px;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--light_blue_half_opacity);
+    margin-bottom: 30px;
+}
+
+.personalInformationBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--light_blue);
+    border-radius: 25px;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.personalInformationLine {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personalInformationField {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldTitle {
+    margin-left: 26px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: var(--black_blue);
+    opacity: 0.5;
+}
+
+.fieldText {
+    font-size: 16px;
+    padding: 8px 26px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg_light_blue);
+    border-radius: 25px;
+    overflow-wrap: anywhere;
+}
+
+.personalInformationButton {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .personalInformationLine {
+        flex-wrap: nowrap;
+    }
+
+    .personalInformationButton {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .doctorInformationBlock {
+        padding: 36px 60px;
+        flex-wrap: nowrap;
+        gap: 20px;
+        background-color: var(--light_blue_half_opacity);
+    }
+}

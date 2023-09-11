@@ -1,0 +1,15 @@
+.contentLinkBox {
+    display: flex;
+    gap: 32px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 550px) {
+    .contentLinkBox {
+        gap: 16px 23px;
+    }
+}

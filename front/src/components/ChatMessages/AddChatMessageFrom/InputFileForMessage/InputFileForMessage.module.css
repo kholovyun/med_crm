@@ -1,0 +1,43 @@
+.file_input_label {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.file_input {
+    display: none;
+}
+
+.file_icon {
+    background: url("../../../../assets/img/icon-file.svg") center/contain no-repeat;
+    width: 23px;
+    height: 29px;
+    display: inline-block;
+}
+
+.reload_image_icon {
+    background: url("../../../../assets/img/icon_reload_image.svg") center/contain no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.file_input_label:hover {
+    opacity: 1;
+}
+
+
+
+.tooltip:hover>* {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 5px;
+}

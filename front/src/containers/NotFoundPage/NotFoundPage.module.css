@@ -1,0 +1,33 @@
+.not_found_bg {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg_light_blue);
+}
+
+.not_found_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--gray_blue_half_opacity);
+    padding: 0;
+    cursor: default;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+}

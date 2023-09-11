@@ -1,0 +1,15 @@
+.infoTableChild {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px ;
+    background: #E5E8F1;
+    border-radius: 2rem;
+    flex-basis: 30%;
+}
+
+@media screen and (max-width: 890px) {
+    .infoTableChild {
+        flex-basis: 47%;
+    } 
+}

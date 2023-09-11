@@ -1,0 +1,205 @@
+.form_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.label_text {
+    white-space: nowrap;
+}
+
+.two_inputs_row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input_flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login_input {
+    width: 100%;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    color: var(--black_blue);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border: none;
+}
+
+.login_input:focus {
+    outline: none;
+    offset: inherit;
+}
+
+.two_inputs_row .error_text {
+    padding: 0.5rem;
+}
+
+.error_text {
+    max-width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--violet);
+    padding-top: 0.5rem;
+}
+
+.select_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.num_input,
+.custom_select {
+    width: 100%;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    color: var(--black_blue);
+    padding: 1rem 2rem 1rem 1rem;
+    margin: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.num_input:focus {
+    outline: none;
+    offset: inherit;
+}
+
+.select_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: var(--black_blue) transparent transparent transparent;
+}
+
+.text_select_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom_option {
+    color: var(--black_blue);
+    padding: 1rem 0.5rem;
+}
+
+.custom_option:hover {
+    background-color: var(--violet);
+}
+
+.custom_option:checked {
+    color: white;
+    background-color: var(--violet);
+}
+
+.btn_group {
+    display: flex;
+    gap: 2rem;
+}
+
+.added_margin_top {
+    margin-top: 1rem;
+}
+
+.titleTxt {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: var(--black_blue);
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+    .titleTxt {
+        font-size: 1.25rem;
+    }
+
+    .error_text {
+        font-size: 0.6rem;
+    }
+
+    .label_text {
+        white-space: break-spaces;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .custom_option,
+    .login_input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .login_input {
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .two_inputs_row {
+        flex-direction: column;
+    }
+    
+    .btn_group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .titleTxt {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .titleTxt {
+        font-size: 1.5rem;
+    }
+
+    .error_text {
+        font-size: 0.8rem;
+    }
+
+    .login_input {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .label_text {
+        white-space: nowrap;
+    }
+
+    .label_text,
+    .custom_option,
+    .login_input::placeholder {
+        font-size: 1rem;
+    }
+
+    .two_inputs_row {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .btn_group {
+        flex-direction: row;
+    }
+}

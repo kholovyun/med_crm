@@ -1,0 +1,20 @@
+.child_table {
+    background-color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem 1rem 1rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.no_wrap {
+    white-space: nowrap;
+}
+
+.add_btn_row {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}

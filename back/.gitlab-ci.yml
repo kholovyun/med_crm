@@ -1,0 +1,38 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: node:18.13.0-alpine
+  script:
+    - apk update && apk add openssh-client sshpass
+    - echo "проверка сервера старт"
+    - echo "$SERVER_USER@$SERVER_IP"
+    - sshpass -p "$SERVER_PASS" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "echo Connected"
+    - echo "проверка сервера стоп"
+  
+ 
+  only: ["dev"]
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    PROJECT_NAME: serverapi
+  before_script:
+    - apk update && apk add openssh-client sshpass
+  script:
+    - sshpass -p "$SERVER_PASS" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "echo Connected"
+    - sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker stop $PROJECT_NAME || true"
+    - sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker rm $PROJECT_NAME || true"
+    - cp -f $ENV_FILE .env
+    - docker build -t $PROJECT_NAME:$CI_COMMIT_SHA .
+    - docker save $PROJECT_NAME:$CI_COMMIT_SHA | sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker load"
+    - sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker run -d --restart always --name $PROJECT_NAME -p 8000:8000 -v /my/app/public:/app/public $PROJECT_NAME:$CI_COMMIT_SHA"
+  only: ["dev"]
+  after_script:
+  - sshpass -p "$SERVER_PASS" ssh $SERVER_USER@$SERVER_IP "docker image prune -a -f"

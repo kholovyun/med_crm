@@ -1,0 +1,13 @@
+.addChildPlas {
+    width: 100%;
+    text-align: center;
+    color: #8771A7;
+    margin: 0;
+    font-size: 150px;
+    cursor: pointer;
+}
+
+.addChildTxt {
+    width: 100%;
+    text-align: center;
+}

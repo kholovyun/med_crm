@@ -1,0 +1,59 @@
+.sidebar_link_,
+.sidebar_link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--gray_blue);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sidebar_link_:hover,
+.sidebar_link:hover,
+.sidebar_link.active {
+    color: white;
+    background-color: var(--violet);
+    width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.55;
+}
+
+.children_icon {
+    background: url("../../../assets/img/icon_children_sidebar.svg") center/contain no-repeat;
+}
+
+.doctors_icon {
+    background: url("../../../assets/img/icon_doctors_sidebar.svg") center/contain no-repeat;
+}
+
+.parents_icon {
+    background: url("../../../assets/img/icon_parents_sidebar.svg") center/contain no-repeat;
+}
+
+.admins_icon {
+    background: url("../../../assets/img/icon_admins_sidebar.svg") center/contain no-repeat;
+}
+
+.admin_profile_icon {
+    background: url("../../../assets/img/icon_admin_profile_sidebar.svg") center/contain no-repeat;
+}
+
+.statistics_icon {
+    background: url("../../../assets/img/icon_statistics_sidebar.svg") center/contain no-repeat;
+}
+
+.reviews_icon {
+    background: url("../../../assets/img/icon_reviews_sidebar.svg") center/contain no-repeat;
+}
+
+.icon:hover,
+.icon.active {
+    opacity: 1;
+}

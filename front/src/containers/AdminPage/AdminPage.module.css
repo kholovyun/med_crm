@@ -1,0 +1,100 @@
+.AdminPage_row {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    min-height: calc(100vh - (var(--header_height) + var(--footer_height)));
+}
+
+.Admin_page_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.Admin_personal_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.68rem;
+    border-radius: 1.56rem;
+    gap: 1.68rem;
+    background-color: var(--light_blue_half_opacity);
+}
+
+.Admin_first_card_row,
+.Admin_second_card_row {
+    display: flex;
+    gap: 1rem;
+}
+
+.Admin_personal_card_column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg_light_blue);
+    border-radius: 1.56rem;
+    padding: 0.5rem 1.56rem;
+    overflow: hidden;
+}
+
+.Admin_body_text {
+    font-size: 1rem;
+    color: var(--black_blue);
+}
+
+.Admin_edit_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 5px 1rem;
+}
+
+.pencil_icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0.55;
+    background: url("../../assets/img/icon_pencil.svg") center/contain no-repeat;
+}
+
+.pencil_icon:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 320px) {
+    .AdminPage_row {
+        padding: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    .Admin_second_card_row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .AdminPage_row {
+        padding: 20px 40px 0 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Admin_second_card_row {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .AdminPage_row {
+        padding: 20px 0 0 0;
+        width: 980px;
+    }
+}

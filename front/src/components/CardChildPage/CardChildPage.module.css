@@ -1,0 +1,123 @@
+.childBoxFirstTop {
+    padding: 20px 16px;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--light_blue_half_opacity);
+}
+
+.informationBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--light_blue);
+    border-radius: 25px;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field {
+    flex-grow: 1; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldTitle {
+    margin-left: 26px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: var(--black_blue);
+    opacity: 0.5;
+}
+
+.fieldText, .fieldTextBirthdayTablet{
+    font-size: 16px;
+    padding: 8px 26px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg_light_blue);
+    border-radius: 25px;
+    overflow-wrap: anywhere;
+}
+
+.pencil_icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0.55;
+    background: url("../../assets/img/icon_pencil.svg") center/contain no-repeat;
+}
+
+.fieldTextBirthday {
+    font-size: 16px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg_light_blue);
+    border-radius: 25px;
+    overflow-wrap: anywhere;
+}
+
+
+.fieldTextBirthday p {
+    font-size: 16px;
+    padding: 8px 0;
+    width: 33%;
+}
+
+.fieldTextBirthday p:first-child {
+    height: 100%;
+    border-right: 3px solid var(--light_blue);
+    padding-left: 26px;
+}
+
+.fieldTextBirthday p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.fieldTextBirthday p:last-child {
+    height: 100%;
+    border-left: 3px solid var(--light_blue);
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.fieldButton {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .line {
+        flex-wrap: nowrap;
+    }
+
+    .fieldButton {
+        margin-top: 0;
+    }
+
+    .fieldTextBirthdayTablet {
+        display: none;
+    }
+
+    .fieldTextBirthday {
+        display: flex;
+    }
+}
+

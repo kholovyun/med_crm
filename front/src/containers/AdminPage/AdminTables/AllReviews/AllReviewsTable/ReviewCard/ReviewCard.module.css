@@ -1,0 +1,49 @@
+.review_card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    gap: 1rem;
+    padding: 20px 25px;
+}
+
+.author {
+    color: var(--gray_blue);
+    font-weight: 600;
+}
+
+.author_row {
+    display: inline-block;
+    font-size: 0.9rem;
+    line-height: 120%;
+}
+
+.body_text {
+    font-size: 0.9rem;
+    line-height: 130%;
+    color: var(--black_blue);
+}
+
+.review_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.author_row:hover,
+.author_row:hover .author {
+    cursor: pointer;
+    color: var(--black_blue);
+}
+
+.deleteBtn {
+    background: url("../../../../../../assets/img/icon-trash-can.svg") center/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.deleteBtn:hover {
+    opacity: 1;
+}

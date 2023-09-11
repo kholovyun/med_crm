@@ -1,0 +1,26 @@
+.titleTxt {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: var(--black_blue);
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+    .titleTxt {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .titleTxt {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .titleTxt {
+        font-size: 1.8rem;
+    }
+}

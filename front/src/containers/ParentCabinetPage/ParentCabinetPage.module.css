@@ -1,0 +1,39 @@
+.parent_cabinet_column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.parent_cards_section {
+    display: flex;
+    gap: 1rem;
+}
+
+.margin_bottom_minus {
+    margin-bottom: -2rem;
+}
+
+.activationBox {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+    .parent_cards_section {
+        flex-direction: column;
+    }
+
+    .card_row {
+        justify-content: left;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .parent_cards_section {
+        flex-direction: row;
+    }
+
+    .card_row {
+        justify-content: space-between;
+    }
+}

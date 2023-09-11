@@ -1,0 +1,35 @@
+.form_box {
+    display: flex;
+    background-color: var(--light_blue);
+    border-radius: 2rem;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn_row {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.textarea {
+    width: 100%;
+    resize: none;
+    background-color: inherit;
+    font-size: 1rem;
+    line-height: 130%;
+    min-height: 6rem;
+    border: none;
+    outline: none;
+}

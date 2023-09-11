@@ -1,0 +1,134 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    flex-grow: 1;
+    gap: 5px;
+    background-color: var(--light_blue_half_opacity);
+}
+
+.formTitle {
+    text-align: center;
+}
+
+.formLine {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formFieldBox {
+    flex-grow: 1; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.errorText {
+    max-width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--violet);
+    padding-top: 0.5rem;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+}
+
+.fieldTitle {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: var(--black_blue);
+    opacity: 0.5;
+}
+
+.btn_group {
+    display: flex;
+    gap: 2rem;
+}
+
+.added_margin_top {
+    margin-top: 1rem;
+}
+
+.selectSex {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.selectSex::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: var(--black_blue) transparent transparent transparent;
+}
+
+.selectSex select {
+    appearance: none;
+}
+
+@media screen and (min-width: 320px) {
+    .errorText {
+        font-size: 0.6rem;
+    }
+
+    .field {
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .btn_group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .formTitle {
+        font-size: 1.5rem;
+    }
+
+	.formLine {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .errorText {
+        font-size: 0.8rem;
+    }
+
+    .field {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 1.25rem;
+    }
+    
+    .fieldTitle {
+        margin-left: 2rem;
+    }
+
+    .btn_group {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .formTitle {
+        font-size: 1.8rem;
+    }
+}

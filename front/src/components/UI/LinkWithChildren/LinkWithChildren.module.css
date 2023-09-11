@@ -1,0 +1,71 @@
+.linkWithChildren {
+    padding: 30px 60px;
+    background-color: var(--light_blue);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-delay: 0.5s;
+    margin-bottom: 15px;
+    gap: 1.5rem;
+}
+
+.linkWithChildrenContext {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.linkWithChildrenBox {
+    width: 100%;
+    background-color: var(--light_blue);
+}
+
+.linkWithChildren:hover {
+    box-shadow: 0 0 9px var(--gray_blue);
+    transition: 0.3s;
+}
+
+.linkWithChildrenText {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black_blue);
+}
+
+.linkWithChildrenTextContext {
+    text-align: center;
+    color: var(--black_blue);
+}
+
+.linkWithChildrenTextContextOpen {
+    margin-bottom: 30px;
+}
+
+
+.linkWithChildrenArrow {
+    background: url("../../../assets/img/arrow-short.svg") center/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+}
+
+.arrowUp {
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 550px) {
+    .linkWithChildren {
+        padding: 13px 23px;
+    }
+
+    .linkWithChildrenText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .linkWithChildren {
+        flex-basis: 100%;
+    }
+}

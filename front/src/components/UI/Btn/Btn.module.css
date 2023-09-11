@@ -1,0 +1,74 @@
+.btn {
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 400;
+    background-color: var(--violet);
+    cursor: pointer;
+    border-radius: 1.25rem;
+}
+
+.dark_active:active,
+.dark_active:hover {
+    color: var(--violet);
+    background-color: var(--black_blue);
+}
+
+.white_active:active,
+.white_active:hover {
+    color: var(--violet);
+    background-color: white;
+}
+
+.big {
+    font-size: 1.2rem;
+    min-width: 10rem;
+    padding: 0.9rem 2rem;
+}
+
+.small {
+    font-size: 1.2rem;
+    min-width: 6.25rem;
+    padding: 0.75rem 2rem;
+    flex-shrink: 0;
+}
+
+.tiny {
+    padding: 0.625rem 1.25rem;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 320px) {
+    .big {
+        font-size: 1.1rem;
+        min-width: 9rem;
+    }
+
+    .small {
+        font-size: 1rem;
+        min-width: 6rem;
+    }
+
+    .tiny {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .big {
+        font-size: 1.2rem;
+        min-width: 10rem;
+    }
+
+    .small {
+        font-size: 1.2rem;
+        min-width: 6.25rem;
+    }
+
+    .tiny {
+        font-size: 1rem;
+    }
+}

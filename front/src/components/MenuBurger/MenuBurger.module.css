@@ -1,0 +1,94 @@
+.menuBurger {
+    display: none;
+    position: relative;
+    height: 47px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuBurgerBox {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 0.8rem 1.56rem 2rem 1.56rem;
+    background: var(--light_blue);
+    border-radius: 1.56rem 0 1.56rem 1.56rem;
+    box-sizing: border-box;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.closeBox {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.close {
+    width: 24px;
+    height: 24px;
+    background: url("../../assets/img/arrow-in-circle.svg") center/contain no-repeat;
+    transform: rotate(-180deg);
+    opacity: 0.55;
+}
+
+.burgerLink {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 100%;
+    text-decoration: none;
+    color: var(--gray_blue);
+}
+
+.burgerLinkRight {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 100%;
+    text-decoration: none;
+    color: var(--gray_blue);
+    margin-right: 5px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+    .menuBurger {
+        display: flex;
+        font-size: 1.25rem;
+        line-height: 100%;
+        align-items: center;
+    }
+
+    .menuBurgerBox {
+        display: flex;
+        top: -1rem;
+        right: -1rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .menuBurger {
+        display: flex;
+        font-size: 1.25rem;
+        line-height: 100%;
+        align-items: center;
+    }
+
+    .menuBurgerBox {
+        display: flex;
+        top: -1rem;
+        right: -2rem;
+    }
+}

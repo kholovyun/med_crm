@@ -1,0 +1,75 @@
+.Footer_bg {
+    background-color: var(--black_blue);
+}
+
+.Footer_content_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+    gap: 3.125rem;
+    margin: 0 auto;
+}
+
+.Footer_flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.FooterNavlink {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.FooterContactsTitle {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 100%;
+    cursor: default;
+}
+
+.icoContactBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icoContact {
+    min-width: 30px;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.icoContactItemTelegram {
+    background: url("../../assets/img/icon-telegram.svg") center/cover no-repeat;
+}
+
+.icoContactItemWhatsapp {
+    background: url("../../assets/img/icon-mail.svg") center/cover no-repeat;
+}
+
+@media screen and (min-width: 320px) {
+    .Footer_content_container {
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Footer_content_container {
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1052px) {
+    .Footer_content_container {
+        padding: 2rem 0;
+        width: 980px;
+    }
+}

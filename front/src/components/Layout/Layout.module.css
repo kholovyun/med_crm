@@ -1,0 +1,6 @@
+.main_container {
+    width: 100%;
+    min-height: calc(100vh - (var(--header_height) + var(--footer_height)));
+    margin: 0 auto;
+    background-color: var(--bg_light_blue);
+}

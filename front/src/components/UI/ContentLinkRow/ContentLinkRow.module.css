@@ -1,0 +1,6 @@
+.contentLinkRow {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,35 @@
+.list_container {
+    position: relative;
+}
+
+.messages_list_box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    width: 100%;
+    gap: 1rem;
+    background-color: var(--gray_blue_half_opacity);
+    border-radius: 1rem;
+    overflow-y: auto;
+    max-height: 72vh;
+    border: 1px solid var(--gray_blue_half_opacity);
+}
+
+.messages_list_box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messages_list_box::-webkit-scrollbar-track {
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.messages_list_box::-webkit-scrollbar-thumb {
+    background: var(--gray_blue_half_opacity);
+    border-radius: 3px;
+}
+
+.messages_list_box::-webkit-scrollbar-thumb:hover {
+    background: var(--violet);
+}

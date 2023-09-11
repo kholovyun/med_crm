@@ -1,0 +1,31 @@
+.cardBoxText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18191C;
+    background: #F2F4FA;
+    border-radius: 25px;
+    flex-basis: 48%;
+    padding: 11px 28px;
+    margin-bottom: 20px;
+}
+
+.cardBoxGap {
+    display: flex;
+    gap: 10px 10px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 430px) {
+    .cardBoxText {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cardBoxGap {
+        flex-direction: column;
+    }
+}

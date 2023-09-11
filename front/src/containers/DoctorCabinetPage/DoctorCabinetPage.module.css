@@ -1,0 +1,51 @@
+.adminPanelBtn {
+    padding: 13px 23px;
+    background-color: var(--light_blue);
+    border-radius: 2rem;
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.adminPanelBtn:hover {
+    box-shadow: 0 0 9px var(--gray_blue);
+    transition: 0.3s;
+}
+
+.adminPanelBtn p {
+    font-size: 16px;
+    color: var(--black_blue);
+}
+
+
+.arrow {
+    background: url("../../assets/img/arrow-short.svg") center/contain no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+
+@media screen and (min-width: 600px) {
+    .adminPanelBtn {
+        padding: 20px 40px;
+    }
+
+    .adminPanelBtn p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .adminPanelBtn {
+        padding: 30px 60px;
+        flex-basis: 100%;
+    }
+
+    .adminPanelBtn p {
+        font-size: 20px;
+    }
+}
+
+

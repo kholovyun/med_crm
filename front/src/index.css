@@ -1,0 +1,34 @@
+:root {
+	--font-family: 'Roboto', sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--black_blue: rgb(24, 25, 28);
+	--gray_blue: rgb(133, 134, 139);
+	--violet: rgb(135, 113, 167);
+	--bg_light_blue: rgb(242, 244, 250);
+	--light_blue: rgb(229, 232, 241);
+	--light_blue_half_opacity: rgba(229, 232, 241, 0.5);
+	--light_blue_eighty_opacity: rgba(229, 232, 241, 0.8);
+	--gray_blue_half_opacity: rgba(133, 134, 139, 0.5);
+
+	--header_height: calc(47px + 2rem);
+	--footer_height: calc(69px + 4rem);
+}
+
+* {
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}

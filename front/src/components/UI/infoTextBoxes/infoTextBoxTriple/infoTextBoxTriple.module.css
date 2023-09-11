@@ -1,0 +1,34 @@
+.cardBoxOneTriple {
+    display: flex;
+    box-sizing: border-box;
+    gap: 0 2px;
+}
+
+.cardBoxDateText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18191C;
+    background: #F2F4FA;
+    padding: 11px 28px;
+    margin-bottom: 20px;
+    flex-basis: 44%;
+}
+
+.cardBoxDateText:first-child {
+    border-radius: 25px 0 0 25px;
+    flex-basis: 25%;
+}
+
+.cardBoxDateText:last-child {
+    border-radius: 0 25px 25px 0;
+    flex-basis: 30%;
+}
+
+@media screen and (max-width: 430px) {
+    .cardBoxDateText {
+        padding: 11px 10px;
+        font-size: 16px;
+    }
+}
